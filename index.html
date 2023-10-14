@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Survei</title>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <h1 id="title">Form Survei</h1>
+            <p id="description">Terimakasih telah meluangkan waktu untuk membantu kami membuat platform ini menjadi lebih baik</p>
+        </header>
+        <div>
+            <form id="survey-form">
+
+                <fieldset>
+                    <label for="name" id="name-label">Nama: <input type="text" id="name" name="name" required placeholder="Masukkan nama anda"></label>
+
+                    <label for="email" id="email-label">Email: <input type="email" id="email" name="email" required placeholder="Masukkan email anda"></label>
+
+                    <label for="number" id="number-label">Umur (opsional): <input type="number" id="number" name="age" min="12" max="120" placeholder="Umur"></label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="dropdown">Opsi yang paling menggambarkan pekerjaan anda sekarang?
+                        <select id="dropdown">
+                            <option value="">Pilih pekerjaan sekarang</option>
+                            <option value="pelajar">Pelajar</option>
+                            <option value="pekerjaTetap">Pekerja tetap</option>
+                            <option value="paruhWaktu">Pelajar paruh waktu</option>
+                            <option value="tidakInginMenyebutkan">Tidak ingin menyebutkan</option>
+                            <option value="other">Lainnya</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="radio">
+                        Apakah anda akan menyarankan platform kami kepada teman anda?
+                        <label for="sure"><input type="radio" name="recommendToOther" value="sure" class="inline"> Tentu</label>
+                        <label for="maybe"></label><input type="radio" name="recommendToOther" id="maybe" value="maybe" class="inline"> Mungkin</label>
+                        <label for="notSure"><input type="radio" name="recommendToOther" value="notSure" class="inline"> Tidak yakin</label>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="checkbox">
+                        Apa yang ingin anda perbaiki kedepannya? (Checklist yang sesuai)
+                        <label for="fp"><input id="fp" type="checkbox" name="wantToFix" class="inline" value="1"> Front-end</label>
+                        <label for="bp"><input id="bp" type="checkbox" name="wantToFix" class="inline" value="2"> Back-end</label>
+                        <label for="o"><input id="o" type="checkbox" name="wantToFix" class="inline" value="3"> Lainnya</label>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="comments">
+                        Anda punya komentar dan saran?
+                        <textarea id="comments" name="comments" cols="30" rows="5"></textarea>
+                    </label>
+                </fieldset>
+
+                <input type="submit" id="submit">
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
